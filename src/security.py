@@ -16,7 +16,7 @@ userid_mapping = {
 
 
 def authenticate(username, password):
-    user = userid_mapping.get(username, None)
+    user = username_mapping.get(username, None)
     if user and safe_str_cmp(user.password, password):
         return user
 
