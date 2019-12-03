@@ -3,6 +3,7 @@ from flask_restful import Resource, Api
 
 
 app = Flask(__name__)
+app.secret_key = 'v5INH8Pal09ZD6Omr11r2Jspr3KJOshr'
 api = Api(app)
 
 
