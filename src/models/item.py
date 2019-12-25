@@ -12,7 +12,7 @@ class ItemModel(db.Model):
         self.price = price
     
     def json(self):
-        return {'name': self.name, 'price': self.price}
+        return {'id': self.id, 'name': self.name, 'price': self.price}
 
     def save_to_db(self):
         db.session.add(self)
